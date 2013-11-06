@@ -45,9 +45,6 @@
 		61295D4716B89F48005DB02C /* SLSTagParser.gen.m in Sources */ = {isa = PBXBuildFile; fileRef = 61295D4216B89F46005DB02C /* SLSTagParser.gen.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		61295D4816B89F48005DB02C /* SLSTagParser.gen.m in Sources */ = {isa = PBXBuildFile; fileRef = 61295D4216B89F46005DB02C /* SLSTagParser.gen.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		61295D4E16B8B140005DB02C /* Slash.h in Headers */ = {isa = PBXBuildFile; fileRef = 61295D4D16B8B140005DB02C /* Slash.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61295D5016B8B2B7005DB02C /* Slash.h in Headers */ = {isa = PBXBuildFile; fileRef = 61295D4D16B8B140005DB02C /* Slash.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61295D5116B8B2B7005DB02C /* SLSMarkupParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6154844A167A087E00A37428 /* SLSMarkupParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61295D5216B8B2B7005DB02C /* SLSErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 61295D3416B895EE005DB02C /* SLSErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		61295D5316B8B2C9005DB02C /* SLSErrors.h in Headers */ = {isa = PBXBuildFile; fileRef = 61295D3416B895EE005DB02C /* SLSErrors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6154843C167A084500A37428 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6154843B167A084500A37428 /* Foundation.framework */; };
 		6154844C167A087E00A37428 /* SLSMarkupParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6154844B167A087E00A37428 /* SLSMarkupParser.m */; };
@@ -91,7 +88,6 @@
 		61D52D49167B6E390027C915 /* libSlash-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61548438167A084500A37428 /* libSlash-iOS.a */; };
 		61D52D4F167B73610027C915 /* SLSViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D52D4E167B73610027C915 /* SLSViewController_iPhone.xib */; };
 		61D52D50167B74840027C915 /* libSlash-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61548438167A084500A37428 /* libSlash-iOS.a */; };
-		61D52D51167B794F0027C915 /* SLSMarkupParser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6154844A167A087E00A37428 /* SLSMarkupParser.h */; };
 		61D52D52167B79590027C915 /* SLSMarkupParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6154844A167A087E00A37428 /* SLSMarkupParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -169,16 +165,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		61548436167A084500A37428 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/${PRODUCT_NAME}";
-			dstSubfolderSpec = 16;
-			files = (
-				61D52D51167B794F0027C915 /* SLSMarkupParser.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		616B330216C6B2AE0009AD78 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -545,16 +531,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		61295D4F16B8B2AE005DB02C /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				61295D5016B8B2B7005DB02C /* Slash.h in Headers */,
-				61295D5116B8B2B7005DB02C /* SLSMarkupParser.h in Headers */,
-				61295D5216B8B2B7005DB02C /* SLSErrors.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6154849C167A0C7400A37428 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -579,8 +555,6 @@
 			buildPhases = (
 				61548434167A084500A37428 /* Sources */,
 				61548435167A084500A37428 /* Frameworks */,
-				61548436167A084500A37428 /* CopyFiles */,
-				61295D4F16B8B2AE005DB02C /* Headers */,
 			);
 			buildRules = (
 				6154845B167A09F000A37428 /* PBXBuildRule */,
@@ -710,7 +684,7 @@
 		6154842F167A084500A37428 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = ChrisDevereux;
 			};
 			buildConfigurationList = 61548432167A084500A37428 /* Build configuration list for PBXProject "Slash" */;
@@ -1029,6 +1003,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
@@ -1048,6 +1023,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -1090,7 +1066,6 @@
 		61548495167A0C4400A37428 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1113,7 +1088,6 @@
 		61548496167A0C4400A37428 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1137,7 +1111,6 @@
 		61548498167A0C4400A37428 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Application-OSX.app/Contents/MacOS/Application-OSX";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
@@ -1157,7 +1130,6 @@
 		61548499167A0C4400A37428 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Application-OSX.app/Contents/MacOS/Application-OSX";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1178,7 +1150,6 @@
 		615484A7167A0C7400A37428 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1204,7 +1175,6 @@
 		615484A8167A0C7400A37428 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -1240,7 +1210,6 @@
 		616B330D16C6B2AF0009AD78 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
@@ -1261,7 +1230,6 @@
 		616B330E16C6B2AF0009AD78 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
