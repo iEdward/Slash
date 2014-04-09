@@ -85,10 +85,10 @@
 		61D52D46167B6B2E0027C915 /* Tests-iOS-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61D52D42167B6B2E0027C915 /* Tests-iOS-Info.plist */; };
 		61D52D47167B6B2E0027C915 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 61D52D44167B6B2E0027C915 /* InfoPlist.strings */; };
 		61D52D48167B6D800027C915 /* TestParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 615484BD167A0F1D00A37428 /* TestParser.m */; };
-		61D52D49167B6E390027C915 /* libSlash-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61548438167A084500A37428 /* libSlash-iOS.a */; };
 		61D52D4F167B73610027C915 /* SLSViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61D52D4E167B73610027C915 /* SLSViewController_iPhone.xib */; };
 		61D52D50167B74840027C915 /* libSlash-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61548438167A084500A37428 /* libSlash-iOS.a */; };
 		61D52D52167B79590027C915 /* SLSMarkupParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 6154844A167A087E00A37428 /* SLSMarkupParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		85704ACA1830419C00C670AA /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85704AC91830419C00C670AA /* CoreText.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXBuildRule section */
@@ -127,13 +127,6 @@
 			remoteGlobalIDString = 61548437167A084500A37428;
 			remoteInfo = "Slash-iOS";
 		};
-		61548489167A0C4400A37428 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6154842F167A084500A37428 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 61548465167A0C4200A37428;
-			remoteInfo = "Application-OSX";
-		};
 		615484B2167A0D4200A37428 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6154842F167A084500A37428 /* Project object */;
@@ -148,19 +141,19 @@
 			remoteGlobalIDString = 6154849D167A0C7400A37428;
 			remoteInfo = "Slash-OSX";
 		};
-		61D52D28167B6A6B0027C915 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6154842F167A084500A37428 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 61D52CFC167B6A690027C915;
-			remoteInfo = "Application-iOS";
-		};
 		61D52D39167B6A8F0027C915 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6154842F167A084500A37428 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 61548437167A084500A37428;
 			remoteInfo = "Slash-iOS";
+		};
+		85704AC71830384C00C670AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6154842F167A084500A37428 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 61D52CFC167B6A690027C915;
+			remoteInfo = "Application-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -240,6 +233,7 @@
 		61D52D42167B6B2E0027C915 /* Tests-iOS-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Tests-iOS-Info.plist"; path = "Tests/iOS/Tests-iOS-Info.plist"; sourceTree = SOURCE_ROOT; };
 		61D52D45167B6B2E0027C915 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		61D52D4E167B73610027C915 /* SLSViewController_iPhone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SLSViewController_iPhone.xib; sourceTree = "<group>"; };
+		85704AC91830419C00C670AA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +285,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85704ACA1830419C00C670AA /* CoreText.framework in Frameworks */,
 				61D52D50167B74840027C915 /* libSlash-iOS.a in Frameworks */,
 				61D52D00167B6A6A0027C915 /* UIKit.framework in Frameworks */,
 				61D52D01167B6A6A0027C915 /* Foundation.framework in Frameworks */,
@@ -302,7 +297,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				61D52D49167B6E390027C915 /* libSlash-iOS.a in Frameworks */,
 				61D52D25167B6A6B0027C915 /* SenTestingKit.framework in Frameworks */,
 				61D52D26167B6A6B0027C915 /* UIKit.framework in Frameworks */,
 				61D52D27167B6A6B0027C915 /* Foundation.framework in Frameworks */,
@@ -357,6 +351,7 @@
 		6154843A167A084500A37428 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				85704AC91830419C00C670AA /* CoreText.framework */,
 				615484C8167A136400A37428 /* Foundation.framework */,
 				6154843B167A084500A37428 /* Foundation.framework */,
 				61548468167A0C4300A37428 /* Cocoa.framework */,
@@ -555,6 +550,7 @@
 			buildPhases = (
 				61548434167A084500A37428 /* Sources */,
 				61548435167A084500A37428 /* Frameworks */,
+				61295D4F16B8B2AE005DB02C /* Headers */,
 			);
 			buildRules = (
 				6154845B167A09F000A37428 /* PBXBuildRule */,
@@ -598,7 +594,6 @@
 			);
 			dependencies = (
 				61295D4A16B8A422005DB02C /* PBXTargetDependency */,
-				6154848A167A0C4400A37428 /* PBXTargetDependency */,
 			);
 			name = "Tests-OSX";
 			productName = "Application-OSXTests";
@@ -670,8 +665,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				85704AC81830384C00C670AA /* PBXTargetDependency */,
 				61295D4C16B8A427005DB02C /* PBXTargetDependency */,
-				61D52D29167B6A6B0027C915 /* PBXTargetDependency */,
 			);
 			name = "Tests-iOS";
 			productName = "Application-iOSTests";
@@ -892,11 +887,6 @@
 			target = 61548437167A084500A37428 /* Slash-iOS */;
 			targetProxy = 61295D4B16B8A427005DB02C /* PBXContainerItemProxy */;
 		};
-		6154848A167A0C4400A37428 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 61548465167A0C4200A37428 /* Application-OSX */;
-			targetProxy = 61548489167A0C4400A37428 /* PBXContainerItemProxy */;
-		};
 		615484B3167A0D4200A37428 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6154849D167A0C7400A37428 /* Slash-OSX */;
@@ -907,15 +897,15 @@
 			target = 6154849D167A0C7400A37428 /* Slash-OSX */;
 			targetProxy = 616B331016C6B2BA0009AD78 /* PBXContainerItemProxy */;
 		};
-		61D52D29167B6A6B0027C915 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 61D52CFC167B6A690027C915 /* Application-iOS */;
-			targetProxy = 61D52D28167B6A6B0027C915 /* PBXContainerItemProxy */;
-		};
 		61D52D3A167B6A8F0027C915 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 61548437167A084500A37428 /* Slash-iOS */;
 			targetProxy = 61D52D39167B6A8F0027C915 /* PBXContainerItemProxy */;
+		};
+		85704AC81830384C00C670AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 61D52CFC167B6A690027C915 /* Application-iOS */;
+			targetProxy = 85704AC71830384C00C670AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1040,10 +1030,10 @@
 					"$(inherited)",
 					"YYDEBUG=1",
 				);
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/Slash;
+				PUBLIC_HEADERS_FOLDER_PATH = include/Slash;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -1055,10 +1045,10 @@
 				DSTROOT = /tmp/Slash.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Slash/Slash-iOS-Prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/Slash;
+				PUBLIC_HEADERS_FOLDER_PATH = include/Slash;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -1111,6 +1101,7 @@
 		61548498167A0C4400A37428 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Application-OSX.app/Contents/MacOS/Application-OSX";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
@@ -1122,7 +1113,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -1130,6 +1120,7 @@
 		61548499167A0C4400A37428 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Application-OSX.app/Contents/MacOS/Application-OSX";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1142,7 +1133,6 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -1166,7 +1156,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/Slash;
+				PUBLIC_HEADERS_FOLDER_PATH = include/Slash;
 				SDKROOT = macosx;
 				VALID_ARCHS = x86_64;
 			};
@@ -1187,7 +1177,7 @@
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = /usr/local/include/Slash;
+				PUBLIC_HEADERS_FOLDER_PATH = include/Slash;
 				SDKROOT = macosx;
 				VALID_ARCHS = x86_64;
 			};
@@ -1256,7 +1246,7 @@
 				GCC_PREFIX_HEADER = "Application-iOS/Application-iOS-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/usr/local/include";
 				INFOPLIST_FILE = "Application-iOS/Application-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -1271,7 +1261,7 @@
 				GCC_PREFIX_HEADER = "Application-iOS/Application-iOS-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/usr/local/include";
 				INFOPLIST_FILE = "Application-iOS/Application-iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
