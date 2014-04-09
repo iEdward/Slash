@@ -550,7 +550,6 @@
 			buildPhases = (
 				61548434167A084500A37428 /* Sources */,
 				61548435167A084500A37428 /* Frameworks */,
-				61295D4F16B8B2AE005DB02C /* Headers */,
 			);
 			buildRules = (
 				6154845B167A09F000A37428 /* PBXBuildRule */,
@@ -679,7 +678,7 @@
 		6154842F167A084500A37428 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = ChrisDevereux;
 			};
 			buildConfigurationList = 61548432167A084500A37428 /* Build configuration list for PBXProject "Slash" */;
@@ -1101,7 +1100,6 @@
 		61548498167A0C4400A37428 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Application-OSX.app/Contents/MacOS/Application-OSX";
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
@@ -1120,7 +1118,6 @@
 		61548499167A0C4400A37428 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Application-OSX.app/Contents/MacOS/Application-OSX";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
