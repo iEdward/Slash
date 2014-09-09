@@ -597,7 +597,7 @@
 			name = "Tests-OSX";
 			productName = "Application-OSXTests";
 			productReference = 61548485167A0C4400A37428 /* Tests-OSX.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 		6154849D167A0C7400A37428 /* Slash-OSX */ = {
 			isa = PBXNativeTarget;
@@ -670,7 +670,7 @@
 			name = "Tests-iOS";
 			productName = "Application-iOSTests";
 			productReference = 61D52D24167B6A6B0027C915 /* Tests-iOS.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -678,7 +678,8 @@
 		6154842F167A084500A37428 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0510;
+				LastTestingUpgradeCheck = 0600;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = ChrisDevereux;
 			};
 			buildConfigurationList = 61548432167A084500A37428 /* Build configuration list for PBXProject "Slash" */;
@@ -1138,6 +1139,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
@@ -1163,6 +1165,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
