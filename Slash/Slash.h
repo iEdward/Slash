@@ -6,5 +6,5 @@
 //  Copyright (c) 2013 ChrisDevereux. All rights reserved.
 //
 
-#import <Slash/SLSMarkupParser.h>
-#import <Slash/SLSErrors.h>
+#import "SLSMarkupParser.h"
+#import "SLSErrors.h"
